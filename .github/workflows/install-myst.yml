@@ -24,6 +24,6 @@ jobs:
           path: mystmd
       - name: Install MyST
         working-directory: ./mystmd
-        run: npm install && npm run build
+        run: npm install && npm run build && npm link
       - name: Run MyST
         run: myst --version
